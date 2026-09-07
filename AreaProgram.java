@@ -6,6 +6,7 @@ import java.util.Scanner;
  *
  * @author albertocahdez
  * @author Roland Price
+ * @version 1.01
  */
 public class AreaProgram {
 
@@ -27,7 +28,7 @@ public class AreaProgram {
       menuOption = userInput.nextInt();
 
       switch(menuOption) {
-        case 1:
+        case 1: // User wants to calculate the area of a square
           double userSideLength = 0.0d;
           System.out.print("Please input the side length of your square: ");
           userSideLength = userInput.nextDouble();
@@ -42,7 +43,7 @@ public class AreaProgram {
               + " units");
           break;
 
-        case 2:
+        case 2: // User wants to calculate the area of a circle
           double userRadius = 0.0d;
           System.out.print("Please input the radius of your circle: ");
           userRadius = userInput.nextDouble();
@@ -57,7 +58,7 @@ public class AreaProgram {
               + " units");
           break;
 
-        case 3:
+        case 3: // User wants to calculate the area of a triangle
           double userBase = 0.0d;
           double userHeight = 0.0d;
           System.out.print("Please input the base of your triangle: ");
